@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="travel.css">
+        <script src="https://kit.fontawesome.com/93ab385d7b.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!--NAVBAR-->
+        <section class="nav-bar">
+            <img src="c:\Users\sravy\Downloads\Asian Tour-logos_~2.jpeg" id="logo">
+            <div class="logo"></div>
+            <ul class="tourmenu">
+                <li><a class="menu" a href="#">Home</a></li>
+                <li><a class="menu" href="#">Destinations</a></li>
+                <li><a class="menu" href="#">Packages</a></li>
+                <li><a class="menu" href="#">About us</a></li>
+                <li><a class="menu" href="#">Contact us</a></li>
+            </ul>
+        </section>
+        <!--NAVBAR ends-->
+        <!--banner starts-->
+        <section class="banner">
+            <div class="banner-item">
+                <div class="banner-head">
+                    <h2>Find your Destination!</h2>
+                </div> <br> <br> <br> 
+                <form class="form">
+                    <input type="text" list="mylist" placeholder="Where would you like to go?" class="dest">
+                    <datalist id="mylist">
+                        <option>India</option>
+                        <option>Japan</option>
+                        <option>Hong Kong</option>
+                        <option>South korea</option>
+                        <option>Malayasia</option>
+                        <option>Singapore</option>
+                        <option>Thailand</option>
+                        <option>Nepal</option>
+                        <option>Maldives</option>
+                        <option>Vietnam</option>
+                        <option>The Phillippines</option>
+                    </datalist>
+                    <input type="date" class="date">
+                    <a href="#" class="book">Book</a>
+                </form>
+            </div>
+        </section>
+        <!--banner ends-->
+        <br> <br> <br>
+        <section>
+            <h2 class="desthead"><emp>Destination</emp></h2>
+            <br> <br>
+            <p class="destp">Explore incredible asia with us. Here <i>Asian Tour</i> take you on a journey with lots of fun and amazing places. <br>We cover 20+ destinations and can arrange customize packages for our fabulous travellers. </p>
+            <br> <br> <br> <br>
+            <div>
+                <img src="https://previews.123rf.com/images/artisticco/artisticco1601/artisticco160100027/50898584-a-vector-illustration-of-asia-map-in-cartoon-style.jpg" alt="asia" class="asiapic">
+            </div>
+        </section>
+        <br> <br> <br> <br> <br>
+        <section>
+            <h2 class="trendhead">Trending Tour Destinations</h2> <br> <br>
+            <p class="acities">In Asia Tour We have so many trending destinations like Amazing Varnasi, Hong Kong,<br> Traditional South Korea, Tokyo, Beautiful Taj Mahal, Maldives, Singapore.....etc., <br>For more destinations Please, <a href="#" class="click">Click Here</a>. </p>
+            <p class="bimg">The below are some beautiful Destinations &#128071;&#127996</p>
+        </section>
+        <br> <br> 
+        <!--img slides start-->
+        <section>
+            <div class="slideshow-container">
+                <div class="imgslides">
+                    <img src="C:\Users\sravy\Downloads\Varnasi.jpg" alt="img1" id="images">
+                </div>
+                <div class="imgslides">
+                    <img src="C:\Users\sravy\Downloads\South korea.jpg" alt="img2" id="images">
+                </div>
+                <div class="imgslides">
+                    <img src="C:\Users\sravy\Downloads\HONG KONG.jpg" alt="img3" id="images">
+                </div>
+                <div class="imgslides">
+                    <img src="C:\Users\sravy\Downloads\TOKYO (1).jpg" alt="img4" id="images">
+                </div>
+                <div class="imgslides">
+                    <img src="C:\Users\sravy\Downloads\GOLDEN HOUR.jpg" alt="img4" id="images">
+                </div>
+                <div class="imgslides">
+                    <img src="C:\Users\sravy\Downloads\nepal (1).jpg" alt="img4" id="images">
+                </div>
+                <div class="imgslides">
+                    <img src="C:\Users\sravy\Downloads\malaysia.jpg" alt="img4" id="images">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>    
+            </div>
+           <!--script start-->
+           <script>
+            let slideIndex = 0;
+            showSlides();
+        
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+            function showSlides() {
+                let i;
+                const slides = document.getElementsByClassName("imgslides");
+        
+                if (slideIndex >= slides.length) {
+                    slideIndex = 0;
+                }
+        
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+        
+                slides[slideIndex].style.display = "block";
+                slideIndex++;
+        
+                setTimeout(showSlides, 4000); // Change slide every 2 seconds (adjust as needed)
+            }
+        </script>
+            <!--script ends-->
+        </section>
+        <!--img slides ends-->
+        <br> <br> <br> <br>
+        <!--theme tour starts-->
+        <section>
+            <div class="themehead">
+                <h2>Explore our Tour Themes </h2>
+            </div> <br> <br>
+            <div class="themepone">
+                <p>We have some amazing tour themes for our travelers to explore the world like never before</p>
+            </div>
+            <div class="themeptwo">
+                <p>Some amazing tour themes are Family tours, Adventers tours, Honeymoon tours...<br>For more tour themes & Packages please visit <a href="#">Packages</a></p>
+            </div>
+        </section>
+        <section class="image slider">
+            <div class="slide-container">
+                <span class="slider-span" id="slider-span1"></span>
+                <span class="slider-span" id="slider-span2"></span>
+                <span class="slider-span" id="slider-span3"></span>
+                <div class="image-slider">
+                <div class="slides-div" id="slide-1">
+                    <img src="https://www.saraswathitours.com/images/kodaikanal-standard-family-tours1.jpg" alt="fam img" class="img" id="img1">
+                    <a href="#slider-span1" class="button" id="button-1">Family Tours</a>
+                </div>
+                <div class="slides-div" id="slide-2">
+                    <img src="https://mmtoursandaman.com/wp-content/uploads/2022/03/IMG-20211024-WA0011.jpg" alt="hon img" class="img" id="img2">
+                    <a href="#slider-span2" class="button" id="button-2">Honeymoon Tours</a>
+                </div>
+                <div class="slides-div" id="slide-3">
+                    <img src="https://theteenagertoday.com/wp/wp-content/uploads/2017/01/mountain-climbers.jpg" alt="adv img" class="img" id="img3">
+                    <a href="#slider-span3" class="button" id="button-3">Adventure Tours</a>
+                </div>
+            </div>
+        </section>
+        <!--theme tour ends-->
+        <br> <br> 
+        <!--favourite places start-->
+        <section class="places">
+            <div class="places-text">
+                <small>FEATURED TOUR PACKAGES</small> <br> <br>
+                <h4>Favourite Star Rated Places</h4>
+            </div>
+
+            <div class="cards">
+                <div class="card">
+                    <div class="zoom-img">
+                        <div class="img-card">
+                            <img
+                                src="https://www.tamilnadutourism.tn.gov.in/img/pages/large-desktop/ooty-1655457424_bca80f81e8391ebdaaca.webp">
+                        </div>
+                    </div>
+
+                    <div class="text">
+                        <span class="rating">⭐⭐⭐</span>
+                        <h2>The Hill station Adventure</h2>
+                        <p class="cost">$1650 / Per Person</p>
+                        <div class="card-box">
+                            <p class="time">🕓 3 Days</p>
+                            <p class="location">✈ Ooty, India</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="zoom-img">
+                        <div class="img-card">
+                            <img src="https://www.tripsavvy.com/thmb/qFqPcg6Wo24Hu4fLokNfAZdC-xQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/fuji-mountain-in-autumn-822273028-5a6a8a9c3418c600363958d3.jpg">
+                        </div>
+                    </div>
+
+                    <div class="text">
+                        <span class="rating">⭐⭐⭐</span>
+                        <h2>The Mountain Adventure</h2>
+                        <p class="cost">$1870 / Per Person</p>
+                        <div class="card-box">
+                            <p class="time">🕓 3 Days</p>
+                            <p class="location">✈ Mount fuji, Japan</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="zoom-img">
+                        <div class="img-card">
+                            <img src="https://a.cdn-hotels.com/gdcs/production118/d625/6406ac66-660c-422c-ade3-0b0bb773a586.jpg?impolicy=fcrop&w=800&h=533&q=medium">
+                        </div>
+                    </div>
+
+                    <div class="text">
+                        <span class="rating">⭐⭐⭐</span>
+                        <h2>The Culture Adventure</h2>
+                        <p class="cost">$1900 / Per Person</p>
+                        <div class="card-box">
+                            <p class="time">🕓 3 Days</p>
+                            <p class="location">✈ Seoul, South Korea</p>
+                        </div>
+                    </div>
+
+                </div>
+        
+                <div class="card">
+                    <div class="zoom-img">
+                        <div class="img-card">
+                            <img
+                                src="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1200,h_630/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/gi7zurqvco8yegg6bhjd/9D8N%20Gobi%20Desert%20Expedition%20In%20South%20Mongolia%20From%20Singapore.jpg">
+                        </div>
+                    </div>
+                
+                    <div class="text">
+                        <span class="rating">⭐⭐⭐</span>
+                        <h2>The Desert Adventure</h2>
+                        <p class="cost">$1700 / Per Person</p>
+                        <div class="card-box">
+                            <p class="time">🕓 3 Days</p>
+                            <p class="location">✈ Gobi, Mangolia</p>
+                        </div>
+                    </div>
+                </div>
+
+                    <div class="card">
+                        <div class="zoom-img">
+                            <div class="img-card">
+                                <img
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Taj_Mahal_%28Edited%29.jpeg/1200px-Taj_Mahal_%28Edited%29.jpeg">
+                            </div>
+                        </div>
+                    
+                        <div class="text">
+                            <span class="rating">⭐⭐⭐</span>
+                            <h2>The Beauty Adventure</h2>
+                            <p class="cost">$1780 / Per Person</p>
+                            <div class="card-box">
+                                <p class="time">🕓 3 Days</p>
+                                <p class="location">✈ Delhi, India</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card">
+                            <div class="zoom-img">
+                                <div class="img-card">
+                                    <img
+                                        src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/f4/64/65/exterior-view.jpg?w=700&h=-1&s=1">
+                                </div>
+                            </div>
+                        
+                            <div class="text">
+                                <span class="rating">⭐⭐⭐</span>
+                                <h2>The Island Adventure</h2>
+                                <p class="cost">$1920 / Per Person</p>
+                                <div class="card-box">
+                                    <p class="time">🕓 3 Days</p>
+                                    <p class="location">✈ Aklan, Philippines</p>
+                                </div>
+                            </div>
+                    </div>
+               
+            </div>
+        </section>
+        <!--favourite places end-->
+        <br> <br> <br> <br> <br> <br>
+        <!--reviews start-->
+        <section>
+            <div class="review">
+                <div class="inner">
+                <h1>Customer Reviews</h1>
+                <div class="border"></div>
+                <div class="row">
+                    <div class="col">
+    
+                        <div class="customerreview">
+                           <img src="https://img.freepik.com/free-photo/beautiful-woman-street_23-2147654273.jpg">
+                           <div class="name">Sofia</div>
+                           <div class="stars">
+                             <i class="fa-solid fa-star"></i>
+                             <i class="fa-solid fa-star"></i>
+                             <i class="fa-solid fa-star"></i>
+                             <i class="fa-solid fa-star"></i>
+                             <i class="fa-solid fa-star"></i>
+                            </div>
+                        <p>The trip was amazingly done. Well beyond our expectation. From the moment we arrived to Asia, our tour guide extended our welcome with a gift. During the trip they upgrade our stay and at the end of our journey they bid us a warm farewell.</p>
+                        </div>
+    
+                    </div>
+    
+                    <div class="col">
+    
+                        <div class="customerreview">
+                           <img src="https://img.freepik.com/premium-photo/handsome-man-eyeglasses-smiles-sincerely-outside-portrait-brunette-guy-black-jacket-white-tshirt-holding-backpack-near-airport_197531-27126.jpg">
+                           <div class="name">Devin</div>
+                           <div class="stars">
+                             <i class="fa-solid fa-star"></i>
+                             <i class="fa-solid fa-star"></i>
+                             <i class="fa-solid fa-star"></i>
+                             <i class="fa-solid fa-star"></i>
+                             <i class="fa-solid fa-star"></i>
+                            </div>
+                        <p>Great company who takes care of you to make an unforgettable Travel experience! Realy recommended. They also have good local guides! I loved this trip with Asian Tour.</p>
+                        </div>
+            
+                    </div>
+    
+                    <div class="col">
+    
+                        <div class="customerreview">
+                           <img src="https://media.istockphoto.com/photos/lifes-taught-me-a-whole-lot-about-myself-picture-id1202259529?k=6&m=1202259529&s=612x612&w=0&h=W9kfKtg41m13Lc2RYUY8sPwNI84eLWxWvklKfIDuICo=">
+                           <div class="name">Zuri</div>
+                           <div class="stars">
+                             <i class="fa-solid fa-star"></i>
+                             <i class="fa-solid fa-star"></i>
+                             <i class="fa-solid fa-star"></i>
+                             <i class="fa-solid fa-star"></i>
+                             <i class="fa-regular fa-star"></i>
+                            </div>
+                        <p>Had a wonderful time. I had highly recommend this to anyone who wants to see the rural landscape and countryside. Overall a really good experience. Good communication and updates.</p>
+                        </div>
+                         
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>  <br> <br> <br> <br><br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+        <!--about us starts-->
+        <section class="aboutpara">
+            <div>
+                <h2>About Us</h2>
+            </div>  <br> <br>
+            <div>
+                <h4>We are Go Trip Travels Support Company</h4>
+            </div> <br>
+            <div>
+                <p>We Asian Tour is one of the world's leading providers of travel services,</p>
+                <p>We provide different tour themes, destinations, packages for our customers.</p>
+            </div>
+            <div>
+                <p>Asian Tour travel services have :</p>
+            </div>
+        </section>
+        
+        <section class="services">
+            <div class="service-item">
+                <img src="https://media.istockphoto.com/id/1213535284/vector/zookeeper-isolated-on-a-white-background.jpg?s=612x612&w=0&k=20&c=wCD1XaN86BegvIBWrBtd6RRNKuIEsx46Ol6Zfwx04-k="> <br> 
+                <h2>5000+ Our Local Guides</h2>
+            </div>
+            <div class="service-item">
+                <img src="https://us.123rf.com/450wm/lkeskinen/lkeskinen1701/lkeskinen170112840/69733598-guarantee-trust-rubber-stamp-grunge-design-with-dust-scratches-effects-can-be-easily-removed-for-a.jpg?ver=6"> <br> 
+                <h2>100% Trusted Tour Agency</h2>
+            </div>
+            <div class="service-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4oF_3FXNBv1PLTuRH5nUnhvODKoephk27ZevtW59zbsOYLHC5mt-uvNLXWWKDBmMfXRQ&usqp=CAU"> <br> 
+                <h2>15+ Years of Travel Experience</h2>
+            </div>
+            <div class="service-item">
+                <img src="https://media.istockphoto.com/id/1254973475/vector/stars-symbol-emblem-icon.jpg?s=612x612&w=0&k=20&c=XupY1KJWcwrWbN9jtpD7HUYB_BbgjymsXJTDUH_OuHI="> <br> 
+                <h2>98% Our Travelers are Happy</h2>
+            </div>
+        </section>
+        <!--about us ends-->
+        <!--mailid starts-->
+        <section>
+            <h1 class="mailheading">E-mail Letters</h1> <br> <br>
+            <p class="mailpara">sign up to receive the best offers</p>
+        </section>
+        <br> 
+        <section>
+            <div class="mailid">
+                <input type="text" id="mailid" placeholder="enter your Mail id">
+                <label for="mailid" class="subscribe">subscribe</label>
+            </div>
+        </section>
+        <!--mailid ends-->
+        
+        <!--contact us starts-->
+        <section class="contact">
+            <div class="footer">
+                <h1>Contact us</h1> <br> <br> 
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <br> <br>
+            </div>
+            <div class="mailphone">
+            <p class="fa-solid fa-envelope">: asiantour@gmail.com</p> <br> <br>
+            <p class="fa-solid fa-phone">: +91-9758269285</p>
+            </div>
+            <br> <br> <br> <br>
+            <div class="bord">
+            <div class="questionh">
+                <h2>Ask any question</h2>
+            </div>
+            <br> <br>
+            <div class="questionm">
+                <label for="email"></label>
+                <input type="text" id="email" placeholder="Enter your E-mail id">
+            </div>
+            <br>
+            <div class="question">
+                <textarea placeholder="Ask your Question" rows="4" cols="20"></textarea>
+            </div>
+            <br> <br>
+            <div class="submit">
+                <label for="submit"></label>
+                <input type="submit" id="submit">
+            </div>
+            </div>
+        </section>
+        <br> <br>
+        <!--contact us ends-->
+        <hr> <br>
+        <section class="bottom">
+        <p>Copyrights @2023 Asian Tour | All rights reserved.</p> 
+        <p>Site operator: Asiantour.com travel india pvt. ltd</p>
+        </section>
+    </body>
+</html>
